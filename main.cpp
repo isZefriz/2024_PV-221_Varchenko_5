@@ -28,10 +28,10 @@ class PlagiarismChecker : public QWidget
 public:
     PlagiarismChecker(QWidget *parent = nullptr)
         : QWidget(parent){
-        setWindowTitle("Plagiarism Checker");
+        setWindowTitle("Plagiarist");
         this->textEdit = new QTextEdit("",this);
         this->textEdit->setFixedSize(250, 250);
-        this->checkButton = new QPushButton("Change Color", this);
+        this->checkButton = new QPushButton("Check", this);
         this->checkButton->setFixedSize(250, 50);
         this->checkButton->move(0, 250);
         this->labelResult = new QLabel("-%", this);
